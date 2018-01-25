@@ -1,0 +1,1417 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Rana portfolio html template
+    Template URI: http://themefair.com
+    Description: This is html5 template
+    Author: theme-fair
+    Author URI: http://theme-fair.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	    ##. Google fonts.
+    01. Theme Default CSS (body, link color, section etc)
+    02. Header css hear
+    03. Slider-area css hear
+    04. Youtube css hear
+    05. owl-carousel css hear
+    06. Progress bar css
+    07. Service-area css heare 
+    08. portfolio-area css hear 
+    09. testimonel-area css  
+    10. blog-area css hear
+    11. contact-area css hear 
+    12. footer css hare  
+    13. single-blog css 
+
+-----------------------------------------------------------------------------------*/
+
+/*-------------------
+   00. Google fonts.
+-----------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Signika:300,400,600,700');
+
+
+/*----------------------------------------*/
+/*  01.  Theme default CSS
+/*----------------------------------------*/
+html, body {height: 100%;}
+.floatleft {
+    float:left
+}
+.floatright {
+    float:right
+}
+.alignleft {
+    float:left;margin-right:15px;margin-bottom: 15px
+}
+.alignright {
+    float:right;margin-left:15px;margin-bottom: 15px
+}
+.aligncenter {
+    display:block;margin:0 auto 15px
+}
+a:focus {
+    outline:0px solid
+}
+img {
+    max-width:100%;height:auto
+}
+.fix {
+    overflow:hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Signika', sans-serif;
+  margin: 0 0 10px;
+  color: #555;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 20px;
+}
+p {
+  color: #757575;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 0 15px;
+}
+a {
+    -webkit-transition: all 0.3s ease 0s; 
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease 0s;
+}
+a:hover {
+  color: #ec4445;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+button:focus{
+    outline: none;
+}
+ul{
+  list-style: outside none none;
+  margin: 0;
+  padding: 0
+}
+.clear{clear:both}
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #555;
+}
+/*- 02. Header css hear
+----------------------------------------*/
+.header-area {
+  background:;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/*logo css hear*/
+.logo {
+  margin-top: 26px;
+}
+.logo > a {
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.stick .logo {
+  margin-top: 20px;
+}
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+.navbar-toggle {
+  margin-right: 0;
+  margin-top: -53px;
+}
+.navbar {
+    min-height: 0px;
+}
+.stick .navbar-toggle {
+  margin-top: -45px;
+}
+.mainmenu nav ul li a:focus,
+.mainmenu nav ul li a:hover {
+    background: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    outline: none;
+     text-decoration: none;
+}
+.mainmenu nav ul li {
+  display: inline-block;
+  padding: 0 14px;
+  position: relative;
+}
+.mainmenu nav ul li a {
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 70px;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.mainmenu nav ul li:last-child {
+  padding-right: 0;
+}
+.mainmenu nav ul li  a::before {
+  background-color: #fff;
+  bottom: 34px;
+  content: " ";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: width 0.25s ease-in-out 0s;
+  transition: width 0.25s ease-in-out 0s;
+  width: 0;
+}
+.mainmenu nav ul li a:hover::before,
+.mainmenu nav ul li.active a::before{
+  width: 100%;
+}
+.mainmenu {
+  text-align: right;
+}
+/*stick css*/
+.header-area.stick-header.stick {
+  background: rgba(0, 0, 0, 0.95) none repeat scroll 0 0;
+  position: fixed;
+}
+.stick .mainmenu .navbar-nav li a {
+  font-weight: 400;
+  line-height: 60px;
+}
+.stick .mainmenu .navbar-nav li a::before {
+  bottom: 29px;
+}
+.stick .logo img {
+  width: 65px;
+}
+
+
+/*-- 03. Slider-area css hear  
+--------------------------------*/
+.slider-area {
+  position: relative;
+}
+.bg-overlay::before {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.single-slider {
+  height: 100vh; 
+  background:  no-repeat center center / cover;
+}
+.display-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.slider-text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.slider-text h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  font-size: 60px;
+}
+.slider-text h1 span {
+  font-weight: bold;
+}
+.slider-text p {
+  color: #fff;
+}
+.slider-text p {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.hire-btn > a {
+  background: #000 none repeat scroll 0 0;
+  border-radius: 25px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 40px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.hire-btn > a:hover {
+  background: #ddd none repeat scroll 0 0;
+  -webkit-box-shadow: 0 -60px 0 #ddd inset;
+  box-shadow: 0 -60px 0 #ddd inset;
+  color: #333;
+}
+.scroll-icon {
+  bottom: 40px;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.scroll-icon a {
+  color: #fff;
+  font-size: 30px;
+  padding: 15px;
+}
+/*-- 04. Youtube css hear  
+------------------------------------*/
+.youtube-bg{
+    background: url(img/slider/youtube-bg.jpg) no-repeat scroll center top / cover;
+}
+.dotted-overlay {
+  position: relative;
+}
+.dotted-overlay::after {
+  background: rgba(0, 0, 0, 1) url("img/icons/over-ig.png") repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#particles-js {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+/*-- 05. owl-carousel css hear 
+------------------------------------*/
+.slider-active .owl-nav div {
+  background: #fff;
+  border: 1px solid #ffffff;
+  color: #555;
+  font-size: 24px;
+  height: 42px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  width: 42px;
+  border-radius: 50%;
+}
+.slider-active .owl-nav div:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+.slider-active .owl-nav div.owl-next {
+  left: auto;
+  right: -100px;
+}
+.slider-active .owl-nav div.owl-prev {
+  left: -100px;
+}
+.slider-area:hover .slider-active .owl-nav div.owl-prev {
+  left: 20px;
+}
+.slider-area:hover .slider-active .owl-nav div.owl-next {
+  right: 20px;
+}
+.slider-active .owl-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 10px;
+}
+.slider-active .owl-dot {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin: 0 3px;
+  width: 10px;
+}
+.slider-active .owl-dot.active{
+    background: #fff;
+}
+.slider-area {
+  position: relative;
+  overflow: hidden;
+}
+/*-- 06. Progress bar css  
+---------------------------------*/
+.about-area {
+  background: #f1f1f1 none repeat scroll 0 0;
+  padding: 70px 0 0;
+}
+.about-area h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.about-image {
+  margin-top: 73px;
+}
+.about-info > p {
+  margin-bottom: 20px;
+}
+.down-btn > a {
+  color: #333;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 40px;
+  margin: 0 5px;
+  padding: 0 40px;
+  text-transform: uppercase;
+  border: 2px solid #333;
+  border-radius: 25px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.down-btn > a:hover {
+  background: #000 none repeat scroll 0 0;
+  border-color: #000;
+  -webkit-box-shadow: 0 -60px 0 #000 inset;
+  box-shadow: 0 -60px 0 #000 inset;
+  color: #fff;
+}
+
+.our-skill {
+  overflow: hidden;
+  padding: 30px 0 0;
+}
+
+.our-skill .progress {
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 6px;
+  margin-bottom: 43px;
+  overflow: visible;
+  position: relative;
+}
+.our-skill .lead {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  left: 0;
+  position: absolute;
+  top: -26px;
+}
+.our-skill .progress-bar {
+  background-color: #333333;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.our-skill .progress-bar > span:before, .our-skill .progress-bar > span:after {
+  border: medium solid transparent;
+  content: "";
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+.our-skill .progress-bar > span:before {
+  border-top-color: #333;
+  border-width: 5px;
+  left: 50%;
+  margin-left: -5px;
+}
+.our-skill .progress-bar > span {
+  background: #333 none repeat scroll 0 0;
+  float: right;
+  font-size: 11px;
+  margin-right: 10px;
+  margin-top: -26px;
+  padding: 0 5px;
+  position: relative;
+}
+
+
+/*-- 07. Service-area css heare 
+---------------------------------*/
+.service-area {
+  padding: 107px 0 0;
+}
+.section-title, .service-area .section-title {
+  margin: auto auto 80px;
+  width: 60%;
+}
+.section-title {
+  margin: auto auto 50px;
+}
+.row.services_inner {
+  padding-top: 25px;
+}
+.section-title h2 {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.section-title h2::after,
+.section-title h2::before,
+.testimonel-item h4::after,
+.testimonel-item h4::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+.section-title h2::after {
+  background-color: #000;
+  bottom: 5px;
+  height: 1px;
+  width: 160px;
+}
+.section-title h2::before {
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: 0;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+.single-service {
+  background: #f5f5f5 none repeat scroll 0 0;
+  display: inline-block;
+  padding: 50px 40px;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+.single-service:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-12px);
+  transform: translateY(-12px);
+}
+.service-area .icon {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 5px #f6f6f6;
+  box-shadow: 0 0 0 5px #f6f6f6;
+  height: 80px;
+  left: 50%;
+  line-height: 80px;
+  position: absolute;
+  text-align: center;
+  top: -40px;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 80px;
+}
+.icon i {
+  color: #a0a0a7;
+  font-size: 26px;
+}
+.service-area h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 22px 0 14px;
+}
+.icon-2 {
+  color: #a0a0a7;
+  font-size: 30px;
+}
+
+
+/*-- 08. portfolio-area css hear 
+-----------------------*/
+.portfolio-area {
+  padding: 108px 0 83px;
+}
+.portfolio-menu {
+  margin-bottom: 40px;
+}
+.portfolio-menu button:hover, .portfolio-menu button.active {
+  color: #000;
+}
+.portfolio-menu button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 6px 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.portfolio-menu button::before {
+  background: #424242;
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: -2px;
+  top: 7px;
+  -webkit-transform: rotateZ(34deg);
+  transform: rotateZ(34deg);
+  width: 1px;
+}
+.portfolio-menu button:last-child::before {
+  display: none;
+}
+.portfolio-menu button::after {
+  background: #424242;
+  bottom: -2px;
+  content: "";
+  height: 4px;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 4px;
+}
+.portfolio-menu button:focus{
+ outline: none;
+}
+.portfolio-menu button.active::after,
+.portfolio-menu button:hover::after {
+  color: #000;
+  opacity: 1;
+}
+.portfolio{
+  position: relative;
+  margin-bottom: 30px;
+}
+.hover-style {
+  display: block;
+  position: relative;
+}
+.portfolio-img > img {
+  width: 100%;
+}
+.hover-style::before {
+  background: #000 none repeat scroll 0 0;
+  bottom: 15px;
+  content: "";
+  left: 15px;
+  opacity: 0;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.hover-style:hover::before {
+  opacity: 0.75;
+}
+.portfolio-view {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 100%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+.portfolio-view a {
+  color: #ffffff;
+  font-size: 26px;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+}
+.portfolio:hover .portfolio-view a, .portfolio:hover .portfolio-view{
+  opacity: 1;
+  top: 50%;
+}
+.portfolio-linking {
+  bottom: 10px;
+  left: 0;
+  opacity: 0;
+  padding: 0 30px;
+  position: absolute;
+  right: 0;
+  top: inherit;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  z-index: 2;
+}
+.portfolio:hover .portfolio-linking {
+  opacity: 1;
+}
+.portfolio-linking h3 {
+  margin-bottom: 5px;
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+}
+.portfolio-linking h3 a {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.portfolio-linking span {
+  color: #ddd;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.portfolio-linking h3 a:hover {
+    opacity: 0.7;
+}
+.portfolio-linking h3 a {
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.portfolio:hover .portfolio-linking h3, .portfolio:hover .portfolio-linking span {
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+.view-more > a {
+  border: 2px solid #424242;
+  color: #000000;
+  display: inline-block;
+  line-height: 38px;
+  padding: 0 50px;
+}
+.view-more > a:hover {
+  background: #424242;
+  color: #ffffff;
+}
+/*-
+    09. testimonel-area css 
+-------------------------------------*/
+.testimonel-area {
+  background: #f1f1f1 none repeat scroll 0 0;
+  padding: 105px 0 111px;
+}
+.testimonel-img {
+  margin: 12px auto;
+  overflow: hidden;
+  width: 150px;
+}
+.testimonel-item > h3 {
+  margin-top: 30px;
+}
+.testimonel-img > img {
+  width: 150px !important;
+  height: 150px;
+  border-radius: 50%;
+}
+.testimonel-item h3 {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.testimonel-item h4 {
+  padding-bottom: 15px;
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+}
+.testimonel-item h4::after {
+  background-color: #000;
+  bottom: 5px;
+  height: 1px;
+  width: 100px;
+}
+.testimonel-item h4::before {
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: 4px;
+  padding: 0 0 1px;
+  width: 44px;
+}
+.review-reating {
+  color: #f1c30d;
+  margin-bottom: 12px;
+}
+.testimonel-item > p {
+  padding: 0 20px;
+  position: relative;
+}
+.testimonel-item > p::after {
+    content: "";
+    font-family: fontawesome;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.testimonel-carousel .owl-dots {
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 25px;
+}
+.testimonel-carousel .owl-dot {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin: 0 3px;
+  width: 10px;
+}
+.testimonel-carousel .owl-dot.active {
+  background: #333 none repeat scroll 0 0;
+}
+/*-- 10. blog-area css hear 
+--------------------------*/
+.blog-area {
+  padding: 105px 0 0;
+}
+.single-blog {
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.post-thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+.single-blog:hover .post-thumbnail img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.single-blog .post-thumbnail img {
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.post-meta {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  bottom: 0;
+  color: #fff;
+  padding: 4px 10px;
+  position: absolute;
+}
+.post-content {
+  border-width: 1px 1px medium;
+  padding: 25px 10px 20px 20px;
+}
+.post-content-inner > p {
+  margin: 0;
+}
+.post-footer {
+  border-top: 1px solid #ddd;
+  padding: 10px 10px;
+}
+.sl-count {
+  margin: 0 8px;
+}
+.post-content-inner h3 a {
+  color: #555;
+  font-size: 20px;
+  font-weight: 500;
+}
+.post-content-inner h3 a:hover{
+  color: #000;
+}
+.post-footer > a {
+  font-size: 14px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.post-footer > a:hover {
+    color: 000;
+}
+.post-footer > a:hover i {
+    margin-left: 5px;
+}
+.post-footer a,.post-footer a i {
+  color: #3a3a3a;
+}
+ .post-footer a i {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.post-footer a:hover{
+  color: #000;
+}
+.post-footer span a {
+  font-size: 13px;
+  color: #555;
+}
+.single-blog-area {
+  padding: 100px 0;
+}
+
+.blog-title > h3 {
+    color: #555;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.blog-meta span {
+    color: #777;
+}
+.blog-meta span a {
+    color: #555;
+    text-transform: uppercase;
+}
+.blog-title {
+    margin-bottom: 40px;
+}
+.blog-meta span a:hover {
+    color: #000;
+}
+
+/*-- 11. contact-area css hear 
+------------------------------*/
+.contact-area {
+  background: #fff none repeat scroll 0 0;
+  overflow: hidden;
+  padding: 107px 0 0;
+}
+.contact-form {
+  float: right;
+  position: relative;
+  width: 555px;
+  z-index: 2;
+}
+.contact-form-box input, .contact-form-box textarea {
+  background: #f1f1f1 none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  line-height: 20px;
+  padding: 8px 4px 8px 10px;
+  width: 100%;
+}
+.contact-form-box textarea {
+  height: 150px;
+  resize: none;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.contact-form-box input:focus, .contact-form-box textarea:focus{
+ outline: none;
+ border: 1px solid #ccc;
+}
+.submit-btn  button {
+  background: #333 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 40px;
+  padding: 0 50px;
+  text-transform: uppercase;
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+.submit-btn button:hover {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  -webkit-box-shadow: 0 -60px 0 #ddd inset;
+  box-shadow: 0 -60px 0 #ddd inset;
+  color: #333;
+}
+.form-messege {
+  margin-left: 15px;
+}
+.form-messege.error {
+  color: red;
+  font-size: 18px;
+}
+.form-messege.success {
+  font-size: 18px;
+  color: green;
+}
+
+.contact-area .col-md-6.map-div {
+  padding-right: 0;
+}
+.contact-map-area {
+  height: 440px;
+  position: relative;
+}
+
+.contact-map-area::before {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: inherit;
+  left: -140px;
+  position: absolute;
+  top: 0;
+  transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  width: 280px;
+  z-index: 1;
+}
+.contact-map-area::after {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+/*-- 12. footer css hare 
+---------------------------*/
+.footer-top {
+  background: #ddd none repeat scroll 0 0;
+  padding: 35px 0;
+}
+.contact-info i {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.footer-bottom {
+  background: #333;
+  font-weight: 500;
+  padding: 20px 0;
+  width: 100%;
+}
+.copyright  p{
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  margin: 0;
+}
+.copyright p > a {
+  color: #999;
+}
+.social-link a {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  width: 35px;
+  margin-left: 5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.social-link a:hover {
+  background: #ddd;
+  border-color: #ddd;
+  color: #333;
+}
+#scrollUp {
+  background: #000 none repeat scroll 0 0;
+  border-radius: 25px;
+  bottom: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  height: 40px;
+  line-height: 38px;
+  position: fixed;
+  right: 18px;
+  text-align: center;
+  width: 40px;
+  z-index: 9999;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+#scrollUp:hover{background: #555;}
+
+/*-- 13. single-blog css 
+------------------------*/
+.blog-details-bg{
+    background: url(img/blog/blog-bg.jpg)no-repeat scroll center center / cover;
+}
+.breadcrumbs-area {
+  padding: 200px 0 130px;
+  position: relative;
+}
+.breadcrumbs-title h2 {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.breadcrumbs-list li {
+  display: inline-block;
+}
+.breadcrumbs-list {
+  color: #dddd;
+  padding: 40px 0;
+}
+.breadcrumbs-list li {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.breadcrumbs-list li a {
+  color: #222;
+  display: block;
+}
+.breadcrumbs-list li a:hover {
+  color: #666;
+}
+.blog-image {
+  margin-bottom: 20px;
+}
+.blog-details-time {
+  padding-left: 15px;
+  position: relative;
+}
+.blog-details-time::before, .blog-quote::before {
+  background: #ddd none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+.blog-details-time > h4 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.blog-details-time > p {
+  font-size: 15px;
+}
+.blog-quote {
+  background: #fafafa none repeat scroll 0 0;
+  margin: 0 30px 30px;
+  padding: 30px 30px 15px;
+  position: relative;
+}
+.blog_quote blockquote {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-left: 4px solid #aaa;
+    margin-left: 50px;
+}
+.blog_quote blockquote p {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.author-image img {
+  width: 100%;
+}
+.author-name > h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.author-name > h4 span {
+    color: #999;
+    margin-left: 7px;
+}
+.author-image {
+  float: left;
+  width: 14%;
+}
+.author-desc {
+  float: left;
+  padding-left: 20px;
+  width: 86%;
+}
+.blog-author-post {
+  border-bottom: 5px solid #ddd;
+  margin: 80px 0;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.pos-details-feedback h5 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.media-img img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+.media-img {
+  float: left;
+  width: 14%;
+}
+.media-body {
+  float: left;
+  width: 86%;
+  padding-left: 10px;
+}
+.media-body h4 a {
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+}
+.media-body span {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+}
+.media-body > a {
+  color: #333;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.media-body > a:hover{
+    color: #000;
+}
+.author-name > h4, .author-name > p {
+    margin: 0;
+}
+.input-filed > input {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    color: #303030;
+    height: 40px;
+    padding: 0 15px;
+    width: 100%;
+}
+.form-bottom > textarea {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    height: 200px;
+    margin-top: 15px;
+    padding: 15px;
+    resize: none;
+    width: 100%;
+}
+.submit-form > button {
+  background: #333 none repeat scroll 0 0;
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #ffffff;
+  display: inline-block;
+  font-size: 15px;
+  height: 38px;
+  margin-top: 20px;
+  padding: 0 38px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 25px;
+}
+.submit-form > button:hover {
+  background: #ddd none repeat scroll 0 0;
+  -webkit-box-shadow: 0 -60px 0 #ddd inset;
+  box-shadow: 0 -60px 0 #ddd inset;
+  color: #333;
+}
+.singl-blog-area {
+    margin-bottom: 51px;
+}
+.comment-title > h5 {
+}
+.comment-title > h5 {
+  color: #555;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.comment-form-box {
+  padding-top: 40px;
+}
+.author-name p {
+    font-size: 13px;
+    font-weight: 300;
+}
+.author-desc > p {
+  color: #777;
+  letter-spacing: 0.5px;
+  line-height: 23px;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.media-body > p {
+  margin-bottom: 6px;
+}
+.pos-details-feedback > h5 {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+.pos-details-feedback > h5::before,.comment-title > h5:before {
+    background: #555 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 50px;
+}
+.media-body > h4 {
+  margin: 0;
+  color: #606060;
+}
+.media {
+  margin: 40px 0;
+}
+.comment-reply{
+    margin-left: 80px;
+}
+.widget-search {
+  padding-left: 20px;
+}
+.widget-search form {
+  position: relative;
+}
+.widget-categories,.blog-right-sidebar-bottom {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+.widget-search input {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #e1e1e1;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 300;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  width: 100%;
+}
+.widget-search button.search-btn {
+  background: #f1f1f1 none repeat scroll 0 0;
+  border: medium none;
+  font-size: 16px;
+  font-weight: normal;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 50px;
+}
+.widget-search button.search-btn:hover {
+  background: #000;
+  color: #fff;
+}
+.widget-categories > h5, .blog-right-sidebar-bottom > h5 {
+  border-bottom: 1px solid #666;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 7px;
+}
+.widget-categories-list > li {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px 0;
+}
+.widget-categories-list > li:last-child {
+  border: none;
+}
+.widget-categories-list a {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+}
+.widget-categories-list a:hover {
+  color: #333;
+}
+.blog-right-sidebar-bottom li {
+  display: inline-block;
+  margin-bottom: 14px;
+  margin-right: 14px;
+}
+.blog-right-sidebar-bottom a {
+  border: 1px solid #c1c1c1;
+  color: #666;
+  display: inline-block;
+  padding: 7px 24px 10px;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.blog-right-sidebar-bottom a:hover {
+  background-color: #464646;
+  border: 1px solid #464646;
+  color: #fff;
+}
+/*mobile menu css */
+.header-area-inner {
+  position: relative;
+}
+.mobile-menu-area {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  margin-top: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 999;
+}
+.mean-container .mean-nav ul li a {
+  padding: 15px 15px;
+}
+.mean-container a.meanmenu-reveal {
+  color: #fff;
+  left: auto !important;
+  position: absolute;
+  top: -54px;
+}
+.mean-container a.meanmenu-reveal span {
+  background: #fff none repeat scroll 0 0;
+}
+.mobile-menu-area .mean-nav {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.mean-container .mean-bar {
+  padding: 0;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  padding: 8px !important;
+}
+.mean-container .mean-nav ul li a {
+  font-size: 14px;
+}

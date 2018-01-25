@@ -1,0 +1,24 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Rana portfolio html template
+    Template URI: http://themefair.com
+    Description: This is html5 template
+    Author: theme-fair
+    Author URI: http://theme-fair.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+Note: This asset style file includes all external plugins css file.
+
+-------------------------------------------------------------------------------*/
+@import url("animate.css");
+@import url("jquery.mb.YTPlayer.min.css");
+@import url("magnific-popup.css");
+@import url("fakeLoader.css");
+@import url("animated-headlines.css");
+@import url("meanmenu.min.css");
+@import url("jquery-ui.css");
+@import url(owl.carousel.min.css);
+@import url("normalize.css");
+@import url("main.css");
